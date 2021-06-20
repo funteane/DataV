@@ -161,6 +161,7 @@ export default {
       }))
 
       mergedConfig.data = data
+	  this.$set(mergedConfig, "data", data)
     },
     calcSVGPath () {
       const { mergedConfig, width, height } = this
